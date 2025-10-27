@@ -30,7 +30,7 @@ async function main() {
   // Obtener todos los propietarios
   const allOwners = await contract.getAllOwners();
   console.log("\n👥 Propietarios:");
-  allOwners.forEach((owner, index) => {
+  allOwners.forEach((owner: string, index: number) => {
     console.log(`   ${index + 1}. ${owner}`);
   });
   
